@@ -10,7 +10,7 @@ class CardItem extends React.Component{
 
 
 mouseMove(e) {
-    if (e.target.id !== "1") {
+    if (e.target.id !== "card") {
         return
     } else {
         let xAxis = (window.innerWidth / 2 - e.pageX) /25;
@@ -21,7 +21,7 @@ mouseMove(e) {
 };
 
 mouseEnter(e) {
-    if (e.target.id !== "1") {
+    if (e.target.id !== "card") {
         return
     } else {
         const image = e.target.firstChild.lastChild;
@@ -33,7 +33,7 @@ mouseEnter(e) {
 
 mouseLeave(e){
 
-    if (e.target.id !== "1") {
+    if (e.target.id !== "card") {
         return
     } else {
         const image = e.target.firstChild.lastChild;
@@ -48,7 +48,7 @@ mouseLeave(e){
 
      { return  <div className="container">
           <div 
-          id="1"
+          id="card"
           className="card"
           onMouseEnter={this.mouseEnter}
           onMouseMove={this.mouseMove}
