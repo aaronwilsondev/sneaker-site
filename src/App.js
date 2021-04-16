@@ -1,6 +1,6 @@
 import './App.css';
 
-import CardItem from "../src/components/item-card/item-card.compionent";
+import CardItem from "./components/item-card/item-card.component";
 
 function App() {
   return (
